@@ -1,0 +1,36 @@
+{  
+   "name":"billing_info_data",
+   "description":"Data forcompleting billing info page",
+   "data":{  
+     
+      "BillingInfoPage":{  
+       "email":{  
+         "value":"fakeemail@yhaoo.com"
+          },
+         "billingFirstName":{  
+            "value":"Firstname"
+         },
+         "billingLastName":{  
+            "value":"Lastname"
+         },
+         "billingAddress":{  
+            "value":"100 Fake St"
+         },
+         "billingCity":{  
+            "value":"Fakecity"
+         },
+         "billingCountry":{  
+            "value":"Canada"
+         },
+         "billingPostcode":{  
+            "value":"L1L 1L1"
+         },
+         "billingPhone":{  
+            "value":"4161111111"
+         },
+         "shippingSameBilling":{  
+            "value":"1"
+         }
+      }
+   }
+}

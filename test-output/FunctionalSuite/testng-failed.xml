@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [FunctionalSuite]">
+  <test name="FunctionalTestCases">
+    <packages>
+      <package name="com.tests"/>
+    </packages>
+    <classes>
+      <class name="com.tests.ShoppingCartTests"/>
+    </classes>
+  </test> <!-- FunctionalTestCases -->
+  <test name="FunctionalTestCases(failed)">
+    <classes>
+      <class name="com.tests.ShoppingCartTests">
+        <methods>
+          <include name="createOrder_forOneMagicMouse_createdSuccessfully" invocation-numbers="0"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.tests.ShoppingCartTests -->
+    </classes>
+  </test> <!-- FunctionalTestCases(failed) -->
+</suite> <!-- Failed suite [FunctionalSuite] -->
