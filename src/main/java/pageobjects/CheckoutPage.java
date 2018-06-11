@@ -1,10 +1,10 @@
 package pageobjects;
 
-import java.util.HashMap;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
 import org.testng.asserts.SoftAssert;
 
 import common.BasePage;
@@ -26,7 +26,7 @@ public class CheckoutPage extends BasePage {
 		}
 	}
 
-	public void verifyItemQuantitiesAndPrice(HashMap<String, Integer> itemList) throws Exception {
+	public void verifyItemQuantitiesAndPrice() throws Exception {
 		Log.info("Verifying checkout page displays right items with right quantities and prices");
 		SoftAssert softAssert = new SoftAssert();
 
@@ -66,7 +66,71 @@ public class CheckoutPage extends BasePage {
 
 	}
 	
-	
+	public int countNumberOfProductsInCheckoutPage() {
+		return this.driver.findElement(By.cssSelector("table.checkout_cart"))
+				.findElements(By.tagName("tr")).size() - 1;
+	}
+
+	public void increaseQuantityByOne(Item item) {
+
+		int actualNumberOfItems = this.driver.findElement(By.cssSelector("table.checkout_cart"))
+				.findElements(By.tagName("tr")).size() - 1;
+		boolean found = false;
+		for (int i = 0; i < actualNumberOfItems; i++) {
+			String productName = this.driver
+					.findElement(By.cssSelector(String.format("td.wpsc_product_name.wpsc_product_name_%d", i)))
+					.getText().trim();
+			if (productName.equals(item.getItemName())) {
+				Log.info(String.format("Updating the quantity of %s", item.getItemName()));
+				int quantityBefore = itemList.get(productName);
+				
+				String newQuantity = String.valueOf(quantityBefore+1);
+				WebElement quantity = this.driver
+						.findElement(
+								By.cssSelector(String.format("td.wpsc_product_quantity.wpsc_product_quantity_%d", i)))
+						.findElement(By.name("quantity"));
+				quantity.clear();
+				quantity.sendKeys(newQuantity);
+				this.driver.findElement(By.xpath(String.format(
+						"//*[@id=\"checkout_page_container\"]/div[1]/table/tbody/tr[%d]/td[3]/form/input[4]", i + 2)))
+						.click();
+				this.waitUntilPageLoaded();
+				// updating the item list
+				itemList.put(productName, quantityBefore+1);
+				found = true;
+				break;
+			}
+		}
+		if (!found) {
+			Assert.fail(String.format("%s not found in the checkout list", item.getItemName()));
+		}
+	}
+
+	public void removeAnItemFromTheList(Item item) {
+		int actualNumberOfItems = this.driver.findElement(By.cssSelector("table.checkout_cart"))
+				.findElements(By.tagName("tr")).size() - 1;
+		boolean found = false;
+		for (int i = 0; i < actualNumberOfItems; i++) {
+			String productName = this.driver
+					.findElement(By.cssSelector(String.format("td.wpsc_product_name.wpsc_product_name_%d", i)))
+					.getText().trim();
+			if (productName.equals(item.getItemName())) {
+
+				this.driver.findElement(By.xpath(String.format(
+						"//*[@id=\"checkout_page_container\"]/div[1]/table/tbody/tr[%d]/td[6]/form/input[4]", i + 2)))
+						.click();
+				this.waitUntilPageLoaded();
+				// updating the item list
+				itemList.remove(productName);
+				found = true;
+				break;
+			}
+		}
+		if (!found) {
+			Assert.fail(String.format("%s not found in the checkout list", item.getItemName()));
+		}
+	}
+
 	public BillingInfoPage continueToBillingInfo() {
 		Log.info("Click continue and navigate to billing information");
 		SeleniumUtil.clickElement(

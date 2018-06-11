@@ -20,7 +20,7 @@ public class AccessoriesPage extends BasePage {
 	@FindBy(xpath = "//*[@id=\"checkout_page_container\"]/div[1]/a/span")
 	private WebElement continueButton;
 	
-	private HashMap<String, Integer> itemList;
+	//private HashMap<String, Integer> itemList;
 	
 	public AccessoriesPage(WebDriver driver) {
 		this.driver = driver;
@@ -61,10 +61,6 @@ public class AccessoriesPage extends BasePage {
         }
 	}
 	
-	public HashMap<String, Integer> getItemList(){
-		return this.itemList;
-	}
-
-
+	
 }
 

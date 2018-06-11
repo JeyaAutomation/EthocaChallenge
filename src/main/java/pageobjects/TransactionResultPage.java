@@ -1,6 +1,5 @@
 package pageobjects;
 
-import java.util.HashMap;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -19,7 +18,7 @@ public class TransactionResultPage extends BasePage {
 		this.waitUntilPageLoaded();
 	}
 
-	public void confirmOrderedItems(HashMap<String, Integer> itemList) throws NumberFormatException, Exception {
+	public void confirmOrderedItems() throws NumberFormatException, Exception {
 		Log.info("Verifying Transaction result page displays right items with right quantities and prices");
 		SoftAssert softAssert = new SoftAssert();
 		int actualNumberOfItems = this.driver.findElement(By.cssSelector("table.wpsc-purchase-log-transaction-results"))

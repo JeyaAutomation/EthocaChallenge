@@ -13,6 +13,7 @@
     <classes>
       <class name="com.tests.ShoppingCartTests">
         <methods>
+          <include name="removeAnItem_ffromCheckoutPage_removedSuccessfully" invocation-numbers="0"/>
           <include name="createOrder_forOneMagicMouse_createdSuccessfully" invocation-numbers="0"/>
           <include name="tearDown"/>
           <include name="setUp"/>

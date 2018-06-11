@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -37,8 +37,8 @@
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" class="navigator-link" panel-name="suite-Default_suite">
-              <span class="suite-name border-passed">Default suite</span>
+            <a href="#" class="navigator-link" panel-name="suite-FunctionalSuite">
+              <span class="suite-name border-failed">FunctionalSuite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -48,37 +48,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\jey\AppData\Local\Temp\testng-eclipse--197708650\testng-customsuite.xml</span>
+                  <a href="#" class="navigator-link " panel-name="test-xml-FunctionalSuite">
+                    <span>C:\Users\jey\eclipse-workspace\Challenge\src\main\resources\suite\TestNGFunctionalSuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="testlist-Default_suite">
+                  <a href="#" class="navigator-link " panel-name="testlist-FunctionalSuite">
                     <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="group-Default_suite">
+                  <a href="#" class="navigator-link " panel-name="group-FunctionalSuite">
                     <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="times-Default_suite">
+                  <a href="#" class="navigator-link " panel-name="times-FunctionalSuite">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="reporter-Default_suite">
+                  <a href="#" class="navigator-link " panel-name="reporter-FunctionalSuite">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="ignored-methods-Default_suite">
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-FunctionalSuite">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="chronological-Default_suite">
+                  <a href="#" class="navigator-link " panel-name="chronological-FunctionalSuite">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -91,26 +91,45 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">4 methods, 2 failed,   2 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-FunctionalSuite" class="hide-methods failed suite-FunctionalSuite"> (hide)</a> <!-- hide-methods failed suite-FunctionalSuite -->
+                      <a href="#" panel-name="suite-FunctionalSuite" class="show-methods failed suite-FunctionalSuite"> (show)</a> <!-- show-methods failed suite-FunctionalSuite -->
+                    </span>
+                    <div class="method-list-content failed suite-FunctionalSuite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-FunctionalSuite" title="com.tests.ShoppingCartTests" hash-for-method="createOrder_forOneMagicMouse_createdSuccessfully(ChromeDriver: chrome on XP (null), common.TestProperties@621624b1)">createOrder_forOneMagicMouse_createdSuccessfully(ChromeDriver: chrome on XP (null), common.TestProperties@621624b1)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-FunctionalSuite" title="com.tests.ShoppingCartTests" hash-for-method="removeAnItem_ffromCheckoutPage_removedSuccessfully(ChromeDriver: chrome on XP (null), common.TestProperties@68b7bdcb)">removeAnItem_ffromCheckoutPage_removedSuccessfully(ChromeDriver: chrome on XP (null), common.TestProperties@68b7bdcb)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-FunctionalSuite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
                     <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
+                      <a href="#" panel-name="suite-FunctionalSuite" class="hide-methods passed suite-FunctionalSuite"> (hide)</a> <!-- hide-methods passed suite-FunctionalSuite -->
+                      <a href="#" panel-name="suite-FunctionalSuite" class="show-methods passed suite-FunctionalSuite"> (show)</a> <!-- show-methods passed suite-FunctionalSuite -->
                     </span>
-                    <div class="method-list-content passed suite-Default_suite">
+                    <div class="method-list-content passed suite-FunctionalSuite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.tests.ShoppingCartTests" hash-for-method="createOrder_forMultipleItems_createdSuccessfully(ChromeDriver: chrome on XP (null), common.TestProperties@7283d3eb)">createOrder_forMultipleItems_createdSuccessfully(ChromeDriver: chrome on XP (null), common.TestProperties@7283d3eb)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-FunctionalSuite" title="com.tests.ShoppingCartTests" hash-for-method="createOrder_forMultipleItems_createdSuccessfully(ChromeDriver: chrome on XP (null), common.TestProperties@1f760b47)">createOrder_forMultipleItems_createdSuccessfully(ChromeDriver: chrome on XP (null), common.TestProperties@1f760b47)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.tests.ShoppingCartTests" hash-for-method="createOrder_forOneMagicMouse_createdSuccessfully(ChromeDriver: chrome on XP (null), common.TestProperties@7f426ddd)">createOrder_forOneMagicMouse_createdSuccessfully(ChromeDriver: chrome on XP (null), common.TestProperties@7f426ddd)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-FunctionalSuite" title="com.tests.ShoppingCartTests" hash-for-method="updateQuantity_fromCheckoutPage_updatedSuccessfully(ChromeDriver: chrome on XP (null), common.TestProperties@2ebf524)">updateQuantity_fromCheckoutPage_updatedSuccessfully(ChromeDriver: chrome on XP (null), common.TestProperties@2ebf524)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-Default_suite -->
+                    </div> <!-- method-list-content passed suite-FunctionalSuite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -121,8 +140,40 @@
     </div> <!-- navigator-root -->
     <div class="wrapper">
       <div class="main-panel-root">
-        <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-passed">
+        <div panel-name="suite-FunctionalSuite" class="panel FunctionalSuite">
+          <div class="suite-FunctionalSuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.tests.ShoppingCartTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="createOrder_forOneMagicMouse_createdSuccessfully(ChromeDriver: chrome on XP (null), common.TestProperties@621624b1)">
+                  </a> <!-- createOrder_forOneMagicMouse_createdSuccessfully(ChromeDriver: chrome on XP (null), common.TestProperties@621624b1) -->
+                  <span class="method-name">createOrder_forOneMagicMouse_createdSuccessfully</span>
+                  <span class="parameters">(ChromeDriver: chrome on XP (null), common.TestProperties@621624b1)</span>
+                  <div class="stack-trace">java.lang.AssertionError: Expected the number of items in the cart to be 1 but found 0 expected [1] but found [0]
+	at com.tests.ShoppingCartTests.createOrder_forOneMagicMouse_createdSuccessfully(ShoppingCartTests.java:36)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="removeAnItem_ffromCheckoutPage_removedSuccessfully(ChromeDriver: chrome on XP (null), common.TestProperties@68b7bdcb)">
+                  </a> <!-- removeAnItem_ffromCheckoutPage_removedSuccessfully(ChromeDriver: chrome on XP (null), common.TestProperties@68b7bdcb) -->
+                  <span class="method-name">removeAnItem_ffromCheckoutPage_removedSuccessfully</span>
+                  <span class="parameters">(ChromeDriver: chrome on XP (null), common.TestProperties@68b7bdcb)</span>
+                  <div class="stack-trace">java.lang.AssertionError: Expected only 1 item to be displayed in the cart but 2 items were displayed expected [2] but found [1]
+	at com.tests.ShoppingCartTests.removeAnItem_ffromCheckoutPage_removedSuccessfully(ShoppingCartTests.java:109)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-FunctionalSuite-class-failed -->
+          <div class="suite-FunctionalSuite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
               <span class="class-name">com.tests.ShoppingCartTests</span>
@@ -130,108 +181,119 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="createOrder_forMultipleItems_createdSuccessfully(ChromeDriver: chrome on XP (null), common.TestProperties@7283d3eb)">
-                  </a> <!-- createOrder_forMultipleItems_createdSuccessfully(ChromeDriver: chrome on XP (null), common.TestProperties@7283d3eb) -->
+                  <a name="createOrder_forMultipleItems_createdSuccessfully(ChromeDriver: chrome on XP (null), common.TestProperties@1f760b47)">
+                  </a> <!-- createOrder_forMultipleItems_createdSuccessfully(ChromeDriver: chrome on XP (null), common.TestProperties@1f760b47) -->
                   <span class="method-name">createOrder_forMultipleItems_createdSuccessfully</span>
-                  <span class="parameters">(ChromeDriver: chrome on XP (null), common.TestProperties@7283d3eb)</span>
+                  <span class="parameters">(ChromeDriver: chrome on XP (null), common.TestProperties@1f760b47)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="createOrder_forOneMagicMouse_createdSuccessfully(ChromeDriver: chrome on XP (null), common.TestProperties@7f426ddd)">
-                  </a> <!-- createOrder_forOneMagicMouse_createdSuccessfully(ChromeDriver: chrome on XP (null), common.TestProperties@7f426ddd) -->
-                  <span class="method-name">createOrder_forOneMagicMouse_createdSuccessfully</span>
-                  <span class="parameters">(ChromeDriver: chrome on XP (null), common.TestProperties@7f426ddd)</span>
+                  <a name="updateQuantity_fromCheckoutPage_updatedSuccessfully(ChromeDriver: chrome on XP (null), common.TestProperties@2ebf524)">
+                  </a> <!-- updateQuantity_fromCheckoutPage_updatedSuccessfully(ChromeDriver: chrome on XP (null), common.TestProperties@2ebf524) -->
+                  <span class="method-name">updateQuantity_fromCheckoutPage_updatedSuccessfully</span>
+                  <span class="parameters">(ChromeDriver: chrome on XP (null), common.TestProperties@2ebf524)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-passed -->
-        </div> <!-- panel Default_suite -->
-        <div panel-name="test-xml-Default_suite" class="panel">
+          </div> <!-- suite-FunctionalSuite-class-passed -->
+        </div> <!-- panel FunctionalSuite -->
+        <div panel-name="test-xml-FunctionalSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\jey\AppData\Local\Temp\testng-eclipse--197708650\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\jey\eclipse-workspace\Challenge\src\main\resources\suite\TestNGFunctionalSuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
-  &lt;test verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;FunctionalSuite&quot;&gt;
+  &lt;test name=&quot;FunctionalTestCases&quot;&gt;
+    &lt;packages&gt;
+      &lt;package name=&quot;com.tests&quot;/&gt;
+    &lt;/packages&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.tests.ShoppingCartTests&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Default test --&gt;
-&lt;/suite&gt; &lt;!-- Default suite --&gt;
+  &lt;/test&gt; &lt;!-- FunctionalTestCases --&gt;
+&lt;/suite&gt; &lt;!-- FunctionalSuite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="testlist-Default_suite" class="panel">
+        <div panel-name="testlist-FunctionalSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Tests for Default suite</span>
+            <span class="header-content">Tests for FunctionalSuite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Default test (1 class)</span>
+                <span class="test-name">FunctionalTestCases (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="group-Default_suite" class="panel">
+        <div panel-name="group-FunctionalSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Groups for Default suite</span>
+            <span class="header-content">Groups for FunctionalSuite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="times-Default_suite" class="panel">
+        <div panel-name="times-FunctionalSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Times for Default suite</span>
+            <span class="header-content">Times for FunctionalSuite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="times-div">
               <script type="text/javascript">
-suiteTableInitFunctions.push('tableData_Default_suite');
-function tableData_Default_suite() {
+suiteTableInitFunctions.push('tableData_FunctionalSuite');
+function tableData_FunctionalSuite() {
 var data = new google.visualization.DataTable();
 data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'createOrder_forMultipleItems_createdSuccessfully')
 data.setCell(0, 2, 'com.tests.ShoppingCartTests')
-data.setCell(0, 3, 37364);
+data.setCell(0, 3, 36035);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'createOrder_forOneMagicMouse_createdSuccessfully')
+data.setCell(1, 1, 'removeAnItem_ffromCheckoutPage_removedSuccessfully')
 data.setCell(1, 2, 'com.tests.ShoppingCartTests')
-data.setCell(1, 3, 31071);
-window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
+data.setCell(1, 3, 21243);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'updateQuantity_fromCheckoutPage_updatedSuccessfully')
+data.setCell(2, 2, 'com.tests.ShoppingCartTests')
+data.setCell(2, 3, 20501);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'createOrder_forOneMagicMouse_createdSuccessfully')
+data.setCell(3, 2, 'com.tests.ShoppingCartTests')
+data.setCell(3, 3, 8890);
+window.suiteTableData['FunctionalSuite']= { tableData: data, tableDiv: 'times-div-FunctionalSuite'}
 return data;
 }
               </script>
               <span class="suite-total-time">Total running time: 1 minutes</span>
-              <div id="times-div-Default_suite">
-              </div> <!-- times-div-Default_suite -->
+              <div id="times-div-FunctionalSuite">
+              </div> <!-- times-div-FunctionalSuite -->
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="reporter-Default_suite" class="panel">
+        <div panel-name="reporter-FunctionalSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Reporter output for Default suite</span>
+            <span class="header-content">Reporter output for FunctionalSuite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="ignored-methods-Default_suite" class="panel">
+        <div panel-name="ignored-methods-FunctionalSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="chronological-Default_suite" class="panel">
+        <div panel-name="chronological-FunctionalSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
@@ -243,16 +305,28 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="test-method">
-                <span class="method-name">createOrder_forMultipleItems_createdSuccessfully(ChromeDriver: chrome on XP (null), common.TestProperties@7283d3eb)</span>
-                <span class="method-start">3766 ms</span>
+                <span class="method-name">createOrder_forMultipleItems_createdSuccessfully(ChromeDriver: chrome on XP (null), common.TestProperties@1f760b47)</span>
+                <span class="method-start">3439 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">createOrder_forOneMagicMouse_createdSuccessfully(ChromeDriver: chrome on XP (null), common.TestProperties@7f426ddd)</span>
-                <span class="method-start">41134 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">createOrder_forOneMagicMouse_createdSuccessfully(ChromeDriver: chrome on XP (null), common.TestProperties@621624b1)</span>
+                <span class="method-start">39478 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">removeAnItem_ffromCheckoutPage_removedSuccessfully(ChromeDriver: chrome on XP (null), common.TestProperties@68b7bdcb)</span>
+                <span class="method-start">48373 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">updateQuantity_fromCheckoutPage_updatedSuccessfully(ChromeDriver: chrome on XP (null), common.TestProperties@2ebf524)</span>
+                <span class="method-start">69619 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">72209 ms</span>
+                <span class="method-start">90122 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

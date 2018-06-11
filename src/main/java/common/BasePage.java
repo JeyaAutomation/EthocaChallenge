@@ -1,7 +1,7 @@
 package common;
 
 import org.apache.log4j.Logger;
-import org.apache.log4j.PropertyConfigurator;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
@@ -16,6 +16,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import java.lang.reflect.Field;
 import java.lang.reflect.Constructor;
+import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
@@ -33,6 +34,8 @@ public class BasePage {
 
 	@FindBy(id = "header_cart")
 	private WebElement checkoutButton;
+	
+	public static HashMap<String, Integer> itemList = new HashMap<String, Integer>();
 
 	public WebDriver driver;
 
